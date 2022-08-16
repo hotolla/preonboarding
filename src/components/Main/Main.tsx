@@ -2,7 +2,7 @@ import { Button, CircularProgress, Divider, IconButton, makeStyles, Table, Table
 import FilterListIcon from '@material-ui/icons/FilterList';
 import AddIcon from '@material-ui/icons/Add';
 import { styles } from './styles';
-
+// @ts-ignore
 const useStyles = makeStyles(styles);
 
 export const Main = () => {
@@ -47,20 +47,9 @@ export const Main = () => {
         </TableHead>
         
         <TableBody>
-          {/* {rows.map((row) => (
-            <TableRow key={row.name}>
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
-            </TableRow>
-          ))} */}
+
         </TableBody>
       </Table>
-      {/* как толще сделать? */}
       <Divider style={{ height: 4 }}/>
       <CircularProgress
         size={44}

@@ -1,7 +1,6 @@
 import { Theme } from "@material-ui/core";
 
 export const styles = ({ spacing, typography: { pxToRem } }: Theme) => ({
-  // content from mui drawer:
   root: {
     overflow: 'auto',
     flexGrow: 1,

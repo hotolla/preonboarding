@@ -1,11 +1,24 @@
+import { makeStyles, createStyles } from '@material-ui/core';
 import { Header } from '../Header';
 import { SideBar } from '../SideBar';
 import { Main } from '../Main';
-import { makeStyles } from '@material-ui/core/styles';
-import { styles } from './styles';
 
-// @ts-ignore
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(() => 
+  createStyles({
+    root: {
+      display: 'flex',
+      flexDirection: 'column',
+      height: '100%'
+    },
+    
+    content: {
+      position: 'relative',
+      display: 'flex',
+      flexGrow: 1,
+      overflow: 'auto'
+    }
+  })
+);
 
 export const Dashboard = () => {
   const classes = useStyles();

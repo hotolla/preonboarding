@@ -4,7 +4,6 @@ import { Preonboarding } from "./Preonboarding";
 import { UserDetails } from "./UserDetails";
 import { VersionIndicator } from "./VersionIndicator";
 import { Theme } from "@material-ui/core";
-// import { ReactComponent as Logo } from './logo.jpg';
 const drawerWidth = 240;
 
 const logo =  require('./logo.jpg')
@@ -39,14 +38,11 @@ const useStyles = makeStyles((theme: Theme) =>
     }
   }),
 );
-// посмотреть таблицу
 export const Header = () => {
   const classes = useStyles();
   
   return (
-    // className={clsx(classes.appBar, {
-    //   [classes.appBarShift]: open,
-    // })}
+
     <AppBar color="primary" position="static">
       <Toolbar>
         <Grid container justify="space-between" alignItems="center">
